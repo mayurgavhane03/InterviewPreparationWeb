@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { CountersCode } from "../AllCode";
 import MainDisplay from "../MainDisplay";
 import QuestionDisplay from "../QuestionDisplay";
-import ReactInterviewQuestion from "../question";
-
+import { questions } from "../AllQueAnsData";
+ 
 const Counter = () => {
   const [update, setUpdate] = useState(0);
   const [steps, setSteps] = useState(1);
@@ -78,8 +77,8 @@ const Counter = () => {
 const Counters = () => {
   return (
     <div className=" ml-[200px] ">
-        <QuestionDisplay question={ReactInterviewQuestion.Counter}  /> 
-      <MainDisplay Output={Counter} code={CountersCode} />
+       <QuestionDisplay question={questions.Counter.QuestionName} /> 
+      <MainDisplay Output={Counter} code={questions.Counter.QuestionAnswer} />
     </div>
   );
 };

@@ -8,18 +8,18 @@ function TypeofCourse() {
         <ul className="flex space-x-4 text-white">
           <li><Link to="/react" className="hover:text-gray-300">React  </Link></li>
           <li><Link to="/javascript" className="hover:text-gray-300">JavaScript </Link></li>
-          <li><Link to="/services" className="hover:text-gray-300">Services</Link></li>
-          <li><Link to="/contact" className="hover:text-gray-300">Contact</Link></li>
-          <li><Link to="/item1" className="hover:text-gray-300">Item 1</Link></li>
-          <li><Link to="/item2" className="hover:text-gray-300">Item 2</Link></li>
-          <li><Link to="/item3" className="hover:text-gray-300">Item 3</Link></li>
-          <li><Link to="/item4" className="hover:text-gray-300">Item 4</Link></li>
-          <li><Link to="/item5" className="hover:text-gray-300">Item 5</Link></li>
-          <li><Link to="/item6" className="hover:text-gray-300">Item 6</Link></li>
-          <li><Link to="/item7" className="hover:text-gray-300">Item 7</Link></li>
-          <li><Link to="/item8" className="hover:text-gray-300">Item 8</Link></li>
-          <li><Link to="/item9" className="hover:text-gray-300">Item 9</Link></li>
-          <li><Link to="/item10" className="hover:text-gray-300">Item 10</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Express.js</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Node.js</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">MongoDb</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Java</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Python</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">SQL </Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 4</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 5</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 6</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 7</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 9</Link></li>
+          <li><Link to="/ " className="hover:text-gray-300">Item 10</Link></li>
         </ul>
       </div>
     </nav>

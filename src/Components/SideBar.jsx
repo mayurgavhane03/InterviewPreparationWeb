@@ -9,10 +9,12 @@ function SideBar() {
 
   // Define the menu items for different routes
   const menuItems = {
-    home: [
+    react: [
       { path: '/react1', label: 'Traffic Light' },
       { path: '/react2', label: 'Counter' },
       { path: '/react3', label: 'Build File Explorer' },
+      { path: '/react4', label: 'Scroll Detection' },
+      { path: '/react5', label: 'Pagination' },
       // Add more home menu items
     ],
     javascript: [
@@ -35,7 +37,7 @@ function SideBar() {
   const currentMenuItems = menuItems[currentPath] || menuItems.home;
 
   return (
-    <nav className="bg-black mt-[60px] w-[150px] h-screen fixed top-0 left-0 p-4">
+    <nav className="bg-black mt-[60px] w-[190px] h-screen fixed top-0 left-0 p-4">
       <div>
         <ul className="text-white mt-10">
           {currentMenuItems.map((item, index) => (

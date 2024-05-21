@@ -1,11 +1,7 @@
-
- 
 import React, { useEffect, useState } from "react";
- 
 import MainDisplay from "../MainDisplay";
-import { TrafficlightsCode } from "../AllCode";
 import QuestionDisplay from "../QuestionDisplay";
-import ReactInterviewQuestion from "../question";
+import { questions } from "../AllQueAnsData";
 
 const Trafficlights = () => {
   // State to keep track of the current light color
@@ -23,14 +19,14 @@ const Trafficlights = () => {
     const SwitchBetLights = () => {
       setLight((prevLight) => {
         switch (prevLight) {
-          case 'red':
-            return 'green';
-          case 'green':
-            return 'yellow';
-          case 'yellow':
-            return 'red';
+          case "red":
+            return "green";
+          case "green":
+            return "yellow";
+          case "yellow":
+            return "red";
           default:
-            return 'red';
+            return "red";
         }
       });
     };
@@ -45,11 +41,27 @@ const Trafficlights = () => {
   return (
     <div className="flex flex-col items-center w-24 p-4 bg-black rounded-md  mt-16">
       {/* Red light */}
-      <div className={`w-12 h-12 my-2 rounded-full ${light === 'red' ? 'bg-red-500 opacity-100' : 'bg-red-500 opacity-50'}`}></div>
+      <div
+        className={`w-12 h-12 my-2 rounded-full ${
+          light === "red" ? "bg-red-500 opacity-100" : "bg-red-500 opacity-50"
+        }`}
+      ></div>
       {/* Yellow light */}
-      <div className={`w-12 h-12 my-2 rounded-full ${light === 'yellow' ? 'bg-yellow-500 opacity-100' : 'bg-yellow-500 opacity-30'}`}></div>
+      <div
+        className={`w-12 h-12 my-2 rounded-full ${
+          light === "yellow"
+            ? "bg-yellow-500 opacity-100"
+            : "bg-yellow-500 opacity-30"
+        }`}
+      ></div>
       {/* Green light */}
-      <div className={`w-12 h-12 my-2 rounded-full ${light === 'green' ? 'bg-green-500 opacity-100' : 'bg-green-500 opacity-30'}`}></div>
+      <div
+        className={`w-12 h-12 my-2 rounded-full ${
+          light === "green"
+            ? "bg-green-500 opacity-100"
+            : "bg-green-500 opacity-30"
+        }`}
+      ></div>
     </div>
   );
 };
@@ -57,8 +69,11 @@ const Trafficlights = () => {
 const TrafficLights = () => {
   return (
     <div className=" ml-[200px] ">
-        <QuestionDisplay question={ReactInterviewQuestion.TrafficLight}  /> 
-      <MainDisplay Output={Trafficlights} code={TrafficlightsCode} />
+      <QuestionDisplay question={questions.TrafficLight.QuestionName} />
+      <MainDisplay
+        Output={Trafficlights}
+        code={questions.TrafficLight.QuestionAnswer}
+      />
     </div>
   );
 };

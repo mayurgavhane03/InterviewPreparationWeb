@@ -9,13 +9,15 @@ import Sample from './Components/CodeComponents/sample';
 import FrontPage from './Components/FrontPage';
 import BuildFileExplorer from './Components/AllQuestions/BuildFileExplorer';
 import AdminDashboard from './Components/AdminDashboard';
+import CheckScrollBarIsMovingUpDown from './Components/AllQuestions/CheckScrollBarIsMovingUpDown';
+import Pagination from './Components/AllQuestions/Pagination';
 
 function App() {
   return (
     <>
       <NavBar />
       <TypeofCourse />
-      <div className="flex">
+      <div className="flex bg-gray-400">
         <SideBar />
         <div className="flex-grow p-4">
           <Routes>
@@ -23,7 +25,8 @@ function App() {
             <Route path="/react/react1" element={<TrafficLights />} />
             <Route path="/react/react2" element={<Counters />} />
             <Route path="/react/react3" element={<BuildFileExplorer />} />
-            
+            <Route path="/react/react4" element={<CheckScrollBarIsMovingUpDown />} />
+            <Route path="/react/react5" element={<Pagination />} />
       
 
             <Route path="/AdminDashboard" element={<AdminDashboard />} />

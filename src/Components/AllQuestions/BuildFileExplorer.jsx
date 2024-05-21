@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import ReactInterviewQuestion from "../question";
-import Counters from "./Counter";
-import { BuildFileExplorerCode, CountersCode } from "../AllCode";
 import QuestionDisplay from "../QuestionDisplay";
 import MainDisplay from "../MainDisplay";
 import { FaCaretRight, FaCaretDown } from "react-icons/fa";
+import { questions } from "../AllQueAnsData";
 
 // The Explorer component is a recursive component that displays a file explorer tree structure.
 const Explorer = ({ data }) => {
@@ -94,7 +92,7 @@ const FileExplorer = () => {
   };
 
   return (
-    <div className="mt-[100px] text-5xl">
+    <div className="mt-[100px] text-2xl">
       {/* Render the Explorer component with the defined file structure. */}
       <Explorer data={fileData} />
     </div>
@@ -106,9 +104,9 @@ const BuildFileExplorer = () => {
   return (
     <div className="ml-[200px]">
       {/* Display the interview question related to building a file explorer. */}
-      <QuestionDisplay question={ReactInterviewQuestion.BuildFileExplorer} />
+      <QuestionDisplay question={questions.BuildFileExplorer.QuestionName} /> 
       {/* Main display component that shows the output of the FileExplorer and the corresponding code. */}
-      <MainDisplay Output={FileExplorer} code={BuildFileExplorerCode} />
+      <MainDisplay Output={FileExplorer} code={questions.BuildFileExplorer.QuestionAnswer} />
     </div>
   );
 };
